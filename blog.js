@@ -46,7 +46,6 @@ const handleMenu = (choice) => {
     case '3':
       rl.question('Enter blog ID to delete: ', (id) => {
         deleteBlog(Number(id));
-        console.log('Blog deleted successfully!');
         showMenu();
       });
       break;
